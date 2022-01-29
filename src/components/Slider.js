@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import img1 from './img (1).jpg'
-import img2 from './img (2).jpg'
-import img3 from './img (3).jpg'
+import img1 from './img (1).png'
+import img2 from './img (2).png'
+import img3 from './img (3).png'
+import Data from './data'
 
 class Slider extends Component {
     render() {
@@ -36,6 +37,7 @@ class Slider extends Component {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
+      <Data/>
             </div>
         );
     }

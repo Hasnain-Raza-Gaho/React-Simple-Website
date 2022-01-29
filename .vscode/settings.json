@@ -1,0 +1,20 @@
+{
+    "editor.accessibilityPageSize": 8,
+    "breadcrumbs.enabled": false,
+    "breadcrumbs.icons": false,
+    "breadcrumbs.showArrays": false,
+    "breadcrumbs.showBooleans": false,
+    "breadcrumbs.showClasses": false,
+    "breadcrumbs.showEnumMembers": false,
+    "breadcrumbs.showConstants": false,
+    "breadcrumbs.showConstructors": false,
+    "breadcrumbs.showEnums": false,
+    "breadcrumbs.showEvents": false,
+    "breadcrumbs.showFiles": false,
+    "zenMode.hideStatusBar": false,
+    "workbench.statusBar.visible": false,
+    "workbench.tips.enabled": false,
+    "workbench.editor.autoLockGroups": {
+        "terminalEditor": false
+    }
+}

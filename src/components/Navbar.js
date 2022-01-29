@@ -1,41 +1,29 @@
 import React, { Component } from 'react';
+import {Navbar, Nav, Container, FormControl, Form, Button} from 'react-bootstrap'
+import {Link} from 'react-router-dom'
 
-class Navbar extends Component {
+class Navbar2 extends Component {
     render() {
         return (
-            <div>
-            
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div className="container-fluid">
-          <a className="navbar-brand" href="#"><strong>{this.props.name}</strong></a>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon" />
-          </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="#">Services</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="#">About Us</a>
-              </li>
-             
-             
-            </ul>
-            <form className="d-flex">
-              <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-              <button className="btn btn-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-
-            </div>
+          <Navbar bg="light" expand="lg">
+          <Container>
+            <Navbar.Brand to="/">OLX Site</Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="me-auto">
+                 <Link to='/' className=' text-decoration-none text-black-50 px-3 mt-1 text-uppercase py-2' >Home</Link>
+                 <Link to='/services' className=' text-decoration-none text-black-50 px-3 mt-1 text-uppercase py-2' >Services</Link>
+                 {/* <Link to='/services' className=' text-decoration-none text-black-50 px-3 mt-1 text-uppercase py-2' >Upload Item</Link> */}
+              </Nav>
+            <Form className="">
+        <Button variant="success" className='mx-3 my-1' > <Link to='/signin' className=' text-decoration-none text-white px-3 mt-1 text-uppercase p-2' >Sign In</Link></Button>
+      </Form>
+      
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
         );
     }
 }
 
-export default Navbar;
+export default Navbar2;
