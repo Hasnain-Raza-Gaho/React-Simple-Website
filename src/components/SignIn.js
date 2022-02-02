@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min';
 import {Button, Form} from 'react-bootstrap'
@@ -8,6 +8,16 @@ import {Link} from 'react-router-dom'
 
 
 const Signin = () => {
+
+const [email,setEmail] = useState(null);
+const [password,setPassword] = useState(null);
+
+
+
+
+
+
+
     return (
         <Form className='container'>
   <Form.Group className="mb-3" controlId="formBasicEmail">
