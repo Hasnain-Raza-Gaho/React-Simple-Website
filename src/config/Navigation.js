@@ -8,6 +8,7 @@ import SignIn from '../components/SignIn';
 import SignUp from '../components/SignUp';
 import PageNotFound from '../components/PageNotFound';
 import { Route, Routes } from "react-router-dom";
+import Uploaditem from '../components/uploadItem';
 
 
 
@@ -24,6 +25,7 @@ class Navigation extends Component {
           <Route path='/services' element={<Services/>}/>
           <Route path='/signin' element={<SignIn/>}/>
           <Route path='/signup' element={<SignUp/>}/>
+          <Route path='/uploaditem' element={<Uploaditem/>}/>
           <Route path='*' element={<PageNotFound/>}/>
         </Routes>
 

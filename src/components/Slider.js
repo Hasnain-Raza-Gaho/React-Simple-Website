@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import img1 from './img (1).png'
 import img2 from './img (2).png'
 import img3 from './img (3).png'
-import Data from './data'
 
-class Slider extends Component {
-    render() {
+
+const Slider = ()=> {
+    
         return (
             <div>
                       <div id="carouselExampleDark" className="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -37,10 +37,8 @@ class Slider extends Component {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
-      <Data/>
             </div>
         );
     }
-}
 
 export default Slider;
