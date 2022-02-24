@@ -12,12 +12,6 @@ const Signin = () => {
 const [email,setEmail] = useState(null);
 const [password,setPassword] = useState(null);
 
-
-
-
-
-
-
     return (
         <Form className='container'>
   <Form.Group className="mb-3" controlId="formBasicEmail">

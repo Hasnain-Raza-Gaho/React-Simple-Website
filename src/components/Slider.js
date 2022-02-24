@@ -2,6 +2,7 @@ import React from 'react';
 import img1 from './img (1).png'
 import img2 from './img (2).png'
 import img3 from './img (3).png'
+import Data from './data'
 
 
 const Slider = ()=> {
@@ -37,7 +38,13 @@ const Slider = ()=> {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
+
+
+      <Data/>
             </div>
+
+
+
         );
     }
 

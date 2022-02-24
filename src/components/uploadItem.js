@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { firebase, Storage } from "../config/firebase";
+import { useNavigate } from "react-router-dom";
 
 const UploadItem = () => {
   const [image, setImage] = useState();
@@ -10,6 +11,7 @@ const UploadItem = () => {
   const [url, seturl] = useState();
   const [obj, setobj] = useState();
   const [key, setkey] = useState();
+  const navigate = useNavigate()
 
   const cities = [
     {
@@ -77,9 +79,7 @@ const UploadItem = () => {
           (snapshot.bytesTransferred / snapshot.totalBytes) * 100
         );
         console.log(progress);
-        if (progress === 100) {
-          setUploadBtn(false);
-        }
+       
       },
       (error) => {
         console.log(error);
@@ -93,6 +93,9 @@ const UploadItem = () => {
           .then((url) => {
             seturl(url);
             console.log(url)
+            if(url !== undefined){
+              setUploadBtn(false)
+            }
           });
 
         
@@ -118,6 +121,7 @@ const UploadItem = () => {
     
     firebase.database().ref("OLX").child(key).set(obj);
     console.log(obj);
+    navigate('/')
   };
 
   return (
